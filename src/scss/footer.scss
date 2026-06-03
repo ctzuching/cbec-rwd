@@ -1,0 +1,51 @@
+// Footer SCSS
+
+.bloomia-footer {
+    background-color: $secondary;
+    color: $dark-gray;
+
+    h5 {
+        color: $neutra;
+    }
+
+    .nav-link {
+        color: $dark-gray;
+
+        &:hover, &:focus
+        {
+            color: $primary;
+        }
+    }
+
+    .form-control, .form-control:focus {
+        background-color: $neutra;
+    }
+
+    .btn:hover, .btn:active {
+        color: $secondary;
+    } 
+
+    .copyright-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid $dark-gray;
+
+        .social-media-link {
+            
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+//手機版
+
+@media (max-width: 575.98px) {
+    .copyright-section {
+        flex-direction: column !important;
+    }
+}

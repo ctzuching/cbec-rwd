@@ -1,0 +1,19 @@
+// Global SCSS 
+
+body {
+    padding-top: 200px;
+    background-color: $neutra;
+}
+
+.btn-outline-secondary {
+    --bs-btn-hover-color: #FDFDFD;
+    --bs-btn-active-color: #FDFDFD;
+}
+
+//手機版
+
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 130px;
+    }
+}

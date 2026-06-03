@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bloomia︱跨境電商</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="./src/assets/icons/site.webmanifest">
+    <script type="module" src="./src/js/main.js"></script>
+  </head>
+  <body data-page="home">
+      
+    <div class="swiper marquee-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">100% 正品｜台灣直送</div>
+        <div class="swiper-slide">全站滿 3,000 TWD 即享全球免運</div>
+        <div class="swiper-slide">加入 Bloomia 會員，首購再享專屬優惠</div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md fixed-top bloomia-nav">
+      <div class="container-fluid d-block">
+        <div class="row">
+
+          <div class="col-2 col-md-4 align-self-center">
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#bloomiaOffcanvas" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="col-5 col-md-4 text-sm-end text-md-center">
+            <a class="navbar-brand me-0" href="./index.html">
+              <img src="./src/assets/icons/bloomia-logo-1600x1200.png" class="nav-logo" alt="Bloomia Logo">
+            </a>
+          </div>
+
+          <div class="col-5 col-md-4 align-self-center">
+            <ul class="navbar-nav feature-nav">
+              
+              <li class="nav-item">
+                <a class="nav-link search-trigger" href="javascript:void(0)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </a>
+              </li>
+
+              <div id="search-overlay" class="d-none">
+                <div class="search-wrapper">
+                  <form>
+                    <input class="search-input" type="text" placeholder="請輸入關鍵字" autofocus>
+                  </form>
+                </div>
+                <div class="bloomia-trending">
+                  <div class="trending-keywords">
+                    <p>熱門搜尋</p>
+                    <a class="keyword-link" href="javascript:void(0)">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                      <span>護膚</span>
+                    </a>
+
+                    <a class="keyword-link" href="javascript:void(0)">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                      <span>彩妝</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="nav-item dropdown d-none d-md-inline">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                  </svg>
+                  <span>繁體中文</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="javascript:void(0)">繁體中文</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Tiếng Việt</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-12">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="bloomiaOffcanvas" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <a href="./index.html" class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img src="./src/assets/icons/mobile-bloomia-logo.png" class="img-fluid" width="150">
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav menu-nav flex-grow-1">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      所有商品
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="javascript:void(0)">護膚</a></li>
+                      <li><a class="dropdown-item" href="javascript:void(0)">彩妝</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hover-link" href="javascript:void(0)">暢銷排行</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hover-link" href="javascript:void(0)">獨家品牌</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hover-link" href="javascript:void(0)">美妝教室</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hover-link" href="javascript:void(0)">關於我們</a>
+                  </li>
+
+                  <hr class="d-inline d-md-none">
+                  <div class="setting-title d-inline d-md-none">設定</div>
+
+                  <li class="nav-item dropdown d-inline d-md-none">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span>繁體中文</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="javascript:void(0)">繁體中文</a></li>
+                      <li><a class="dropdown-item" href="javascript:void(0)">Tiếng Việt</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>       
+      </div>
+    </nav>
+
+    <div class="container-fluid hero-section">
+      <div class="row">
+        <div class="col-12 col-md-4 py-0-75 pb-md-0 order-2 order-md-1">
+          <div class="brand-anchor">
+            <h3>綻放妳的自信</h3>
+            <p>Bloom Your Confidence</p>
+            <a href="javascript:void(0)" type="button" class="btn btn-outline-secondary">探索商品</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 px-0 order-1 order-md-2">
+          <div class="swiper banner-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" target="_blank">
+                  <img src="./src/assets/images/heroBanner-1200x600-1.png" class="img-fluid" alt="Hero Banner">
+                </a>         
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" target="_blank">
+                  <img src="./src/assets/images/heroBanner-1200x600-2.png" class="img-fluid" alt="Hero Banner">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" target="_blank">
+                  <img src="./src/assets/images/heroBanner-1200x600-3.png" class="img-fluid" alt="Hero Banner">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="trust-badges">
+        
+        <div class="bloomia-title">
+          <div class="title-line"></div>
+          <div class="title-text">THE BLOOMIA STANDARD</div>
+          <div class="title-line"></div>
+        </div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-4 text-center mb-1">
+              <img src="./src/assets/icons/taiwan-direct-256x256.png" class="img-fluid">
+              <div class="icon-title">台灣直送</div>
+            </div>
+            <div class="col-6 col-sm-4 text-center mb-1">
+              <img src="./src/assets/icons/expert-consultation-256x256.png" class="img-fluid">
+              <div class="icon-title">專業諮詢</div>
+            </div>
+            <div class="col-6 col-sm-4 text-center mb-1">
+              <img src="./src/assets/icons/secure-payment-256x256.png" class="img-fluid">
+              <div class="icon-title">安全支付</div>
+            </div>
+          </div>  
+        </div>
+      </div>
+      
+      <div class="brand-promise">
+        <div class="bloomia-title">
+          <div class="title-line"></div>
+          <div class="title-text">THE ART OF CURATION</div>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="container">
+          <div class="row">          
+            <div class="col-12 col-md-7 pe-md-0">
+              <img src="./src/assets/images/brandImage-1200x600.png" class="img-fluid" alt="Brand image">
+            </div>
+            <div class="col-12 col-md-5 ps-md-0">
+              <div class="info-text">
+                <h4>我們跨越國界</h4>
+                <div>為妳篩選來自台灣最純淨、最專業的醫美級保養</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-highlights">
+        <div class="bloomia-title">
+          <div class="title-line"></div>
+          <div class="title-text">ESSENCE OF SELECTION</div>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="container px-0">
+          <div class="cards-wrapper">
+            <div class="swiper product-swiper px-0-75 px-sm-1">
+              <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="card-link">
+                    <div class="card h-100">
+                      <div class="card-img-wrapper">
+                        <span class="badge text-bg-primary">BEST SELLER</span>
+                        <img src="./src/assets/images/product1-800x600.png" class="card-img-top product-img" alt="Product image">
+                      </div>                      
+                      <div class="card-body">
+                        <h5 class="card-title product-name">積雪草舒緩精華</h5>
+                        <p class="card-text">深層舒緩｜修護肌膚屏障</p>
+                        <p class="card-sale-price product-sale-price">NT$ 880</p>
+                        <p class="card-original-price product-original-price">NT$ 1,100</p>
+                        <div class="d-grid">
+                          <a type="button" class="btn btn-primary add-cart-btn addToastBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                            <span>Add to Cart</span>
+                          </a>
+                        </div>                        
+                      </div>
+                    </div>
+                  </a>         
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="card-link">
+                    <div class="card h-100">
+                      <div class="card-img-wrapper">
+                        <span class="badge text-bg-primary">NEW</span>
+                        <img src="./src/assets/images/product2-800x600.png" class="card-img-top product-img" alt="Product image">
+                      </div>                      
+                      <div class="card-body">
+                        <h5 class="card-title product-name">維他命亮白精華</h5>
+                        <p class="card-text">提亮膚色｜改善暗沉</p>
+                        <p class="card-sale-price product-sale-price">NT$ 1,020</p>
+                        <p class="card-original-price product-original-price">NT$ 1,280</p>
+                        <div class="d-grid">
+                          <a type="button" class="btn btn-primary add-cart-btn addToastBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                            <span>Add to Cart</span>
+                          </a>
+                        </div>                        
+                      </div>
+                    </div>
+                  </a>         
+                </div>
+                
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="card-link">
+                    <div class="card h-100">
+                      <div class="card-img-wrapper">
+                        <span class="badge text-bg-primary">NEW</span>
+                        <img src="./src/assets/images/product3-800x600.png" class="card-img-top product-img" alt="Product image">
+                      </div>                      
+                      <div class="card-body">
+                        <h5 class="card-title product-name">神經醯胺保濕乳霜</h5>
+                        <p class="card-text">72hr 長效保濕｜乾肌救星</p>
+                        <p class="card-sale-price product-sale-price">NT$ 1,260</p>
+                        <p class="card-original-price product-original-price">NT$ 1,580</p>
+                        <div class="d-grid">
+                          <a type="button" class="btn btn-primary add-cart-btn addToastBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                            <span>Add to Cart</span>
+                          </a>
+                        </div>                        
+                      </div>
+                    </div>
+                  </a>         
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="card-link">
+                    <div class="card h-100">
+                      <div class="card-img-wrapper">
+                        <span class="badge text-bg-primary">SPF50+</span>
+                        <img src="./src/assets/images/product4-800x600.png" class="card-img-top product-img" alt="Product image">
+                      </div>                      
+                      <div class="card-body">
+                        <h5 class="card-title product-name">水光防曬乳</h5>
+                        <p class="card-text">清爽不黏膩｜全天候防護</p>
+                        <p class="card-sale-price product-sale-price">NT$ 540</p>
+                        <p class="card-original-price product-original-price">NT$ 680</p>
+                        <div class="d-grid">
+                          <a type="button" class="btn btn-primary add-cart-btn addToastBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                            <span>Add to Cart</span>
+                          </a>
+                        </div>                        
+                      </div>
+                    </div>
+                  </a>         
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="card-link">
+                    <div class="card h-100">
+                      <div class="card-img-wrapper">
+                        <span class="badge text-bg-primary">NEW</span>
+                        <img src="./src/assets/images/product5-800x600.png" class="card-img-top product-img" alt="Product image">
+                      </div>                      
+                      <div class="card-body">
+                        <h5 class="card-title product-name">A醇修護晚霜</h5>
+                        <p class="card-text">撫平細紋｜夜間修護</p>
+                        <p class="card-sale-price product-sale-price">NT$ 1,170</p>
+                        <p class="card-original-price product-original-price">NT$ 1,480</p>
+                        <div class="d-grid">
+                          <a type="button" class="btn btn-primary add-cart-btn addToastBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                            <span>Add to Cart</span>
+                          </a>
+                        </div>                        
+                      </div>
+                    </div>
+                  </a>         
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="card-link">
+                    <div class="card h-100">
+                      <div class="card-img-wrapper">
+                        <span class="badge text-bg-primary">BEST SELLER</span>
+                        <img src="./src/assets/images/product6-800x600.png" class="card-img-top product-img" alt="Product image">
+                      </div>                      
+                      <div class="card-body">
+                        <h5 class="card-title product-name">胺基酸潔面乳</h5>
+                        <p class="card-text">溫和潔淨｜敏感肌適用</p>
+                        <p class="card-sale-price product-sale-price">NT$ 480</p>
+                        <p class="card-original-price product-original-price">NT$ 600</p>
+                        <div class="d-grid">
+                          <a type="button" class="btn btn-primary add-cart-btn addToastBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                            <span>Add to Cart</span>
+                          </a>
+                        </div>                        
+                      </div>
+                    </div>
+                  </a>         
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="card-link">
+                    <div class="card h-100">
+                      <div class="card-img-wrapper d-flex align-items-center">
+                        <img src="./src/assets/icons/mobile-bloomia-logo.png" class="img-fluid" alt="Product image">
+                      </div>                      
+                      <div class="card-body justify-content-start align-items-center">
+                        <h5 class="card-title product-name mb-0-5">更多商品</h5>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>                        
+                      </div>
+                    </div>
+                  </a>         
+                </div>
+             
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          
+          <div class="toast-container position-fixed top-0 end-0 px-1 py-3">
+            <div id="addCartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill me-0-5" viewBox="0 0 16 16">
+                  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0"/>
+                </svg>
+                <strong class="me-auto">Added to Cart</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                <div class="row">
+                  <div class="col-5 pe-0">
+                    <img src="./src/assets/images/product-800x600.png" class="cart-img rounded" alt="Product image">
+                  </div>
+                  <div class="col-7">
+                    <div class="cart-info">
+                      <div class="cart-product">積雪草舒緩精華</div>
+                      <div class="cart-sale-price">NT$ 880</div>
+                      <div class="cart-original-price">NT$ 1,100</div>
+                      <div class="cart-quantity">x <span>1</span></div>  
+                    </div> 
+                  </div>
+                  <div class="d-grid mt-0-75">
+                    <a type="button" class="btn btn-outline-secondary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bag-fill me-0-25" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
+                      </svg>
+                      <span>Buy Now</span>
+                    </a>
+                  </div>
+                </div>    
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>      
+    </main>
+
+    <footer class="bloomia-footer">
+      <div class="container py-1-5">
+        <div class="row">
+          <div class="col-12 col-md-auto col-lg-3 col-xl-4 mb-2 mb-lg-0">
+            <div class="h-100 d-flex align-items-center justify-content-center justify-content-md-start">  
+              <a href="./index.html">
+                <img src="./src/assets/icons/footer-logo.png" class="img-fluid" alt="Footer Logo" width="150">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 col-xl-3 mb-3 mb-lg-0">
+            <h5>Customer Care</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">跨境購物須知</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">退換貨政策</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">常見問題</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">隱私權政策與條款</a>
+                </li>
+              </ul>
+          </div>
+
+          <div class="col-12 col-md-5 col-lg-6 col-xl-5">
+            <form>
+              <h5>Stay In The Glow</h5>
+              <p>訂閱即可獲得首單 10% 優惠碼及最新保養美學資訊。</p> 
+              <div class="d-flex flex-column flex-lg-row w-100 gap-1">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                <button class="btn btn-outline-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="copyright-section">
+          <p>&copy; 2026 Bloomia. All rights reserved.</p>
+          <div class="social-media-link">
+            <a href="javascript:void(0)" target="_blank" class="me-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#A9A9A9" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+            </a>
+           
+            <a href="javascript:void(0)" target="_blank" class="me-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#A9A9A9" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg>
+            </a>
+
+            <a href="javascript:void(0)" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#A9A9A9" class="bi bi-line" viewBox="0 0 16 16">
+                <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0M5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.15.15 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157m.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832l-.013-.015v-.001l-.01-.01-.003-.003-.011-.009h-.001L7.88 4.79l-.003-.002-.005-.003-.008-.005h-.002l-.003-.002-.01-.004-.004-.002-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.2.2 0 0 0 .039.038l.001.001.01.006.004.002.008.004.007.003.005.002.01.003h.003a.2.2 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.16.16 0 0 0-.108.044h-.001l-.001.002-.002.003a.16.16 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.16.16 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z"/>
+              </svg>
+            </a>
+          </div>
+          
+        </div>
+      </div>  
+    </footer>
+
+  </body>
+ 
+</html>

@@ -1,0 +1,30 @@
+// Variables SCSS 
+
+// Theme Colors
+$primary: #F7CAC9;
+$secondary: #2C3E50;
+$accent: #D4AF37;
+$neutra: #FDFDFD;
+$success:#A8E6CF;
+$dark-gray: #A9A9A9;
+$red: #B65E6A;
+$wine-red: #6B3E4B;
+$light-pink: #F9F3F2;
+
+// Spacer
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  "0-25": $spacer * .25, //4
+  "0-5": $spacer * .5, //8
+  "0-75": $spacer * .75, //12
+  1: $spacer, //16
+  "1-25": $spacer * 1.25, //20
+  "1-5": $spacer * 1.5, //24
+  "1-75": $spacer * 1.75, //28
+  2: $spacer *2, //32
+  "2-25": $spacer *2.25, //36
+  "2-5": $spacer *2.5, //40
+  "2-75": $spacer *2.75, //44
+  3: $spacer * 3, //48
+);
