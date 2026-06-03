@@ -35,7 +35,7 @@ https://ctzuching.github.io/cbec-rwd/
 
 - 🤖 使用 Gemini AI + BMAD Method
 - 🧩 協助完成：
-  - 品牌定位（Brand Positioning）
+  - 品牌定位
   - 視覺風格與配色策略
   - 網站資訊架構（IA）
   - UI flow 初步規劃
